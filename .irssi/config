@@ -1,0 +1,16 @@
+servers = (
+  {
+    address = "eu.tilde.chat";
+    chatnet = "tildechat";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "no";
+    autoconnect = "yes";
+  }
+);
+
+chatnets = {
+  tildechat = { type = "IRC"; };
+};
+
+channels = ( { name = "#dimension"; chatnet = "tilechat"; autojoin = "yes"; } );
