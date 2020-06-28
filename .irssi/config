@@ -13,4 +13,4 @@ chatnets = {
   tildechat = { type = "IRC"; };
 };
 
-channels = ( { name = "#dimension"; chatnet = "tilechat"; autojoin = "yes"; } );
+channels = ( { name = "#dimension"; chatnet = "tildechat"; autojoin = "yes"; } );
