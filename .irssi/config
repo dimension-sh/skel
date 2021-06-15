@@ -10,7 +10,15 @@ servers = (
 );
 
 chatnets = {
-  tildechat = { type = "IRC"; };
+  tildechat = {
+    type = "IRC";
+    max_kicks = "4";
+    max_msgs = "5";
+    max_whois = "4";
+    max_query_chans = "5";
+  };
 };
-
-channels = ( { name = "#dimension"; chatnet = "tildechat"; autojoin = "yes"; } );
+channels = ( 
+  { name = "#dimension"; chatnet = "tildechat"; autojoin = "yes"; } 
+  { name = "#meta"; chatnet = "tildechat"; autojoin = "yes"; }
+);
